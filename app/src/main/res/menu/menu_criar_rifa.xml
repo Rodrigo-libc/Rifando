@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_compartilhar_livres"
+        android:title="Compartilhar Livres"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_salvar"
+        android:title="Salvar"
+        android:icon="@drawable/ic_done"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.roh.rifando.ui.home.HomeFragment"
+        android:label="RIFANDO"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_criarRifaFragment"
+            app:destination="@id/criarRifaFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_rifaFragment"
+            app:destination="@id/rifaFragment">
+            <argument
+                android:name="rifa"
+                app:argType="com.roh.rifando.data.model.Rifa" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/criarRifaFragment"
+        android:name="com.roh.rifando.ui.criar.CriarRifaFragment"
+        android:label="Criar Rifa"
+        tools:layout="@layout/fragment_criar_rifa">
+
+        <action
+            android:id="@+id/action_criarRifaFragment_to_rifaFragment"
+            app:destination="@id/rifaFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false">
+            <argument
+                android:name="rifa"
+                app:argType="com.roh.rifando.data.model.Rifa" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/rifaFragment"
+        android:name="com.roh.rifando.ui.rifa.RifaFragment"
+        android:label="RifaFragment"
+        tools:layout="@layout/fragment_rifa">
+
+        <argument
+            android:name="rifa"
+            app:argType="com.roh.rifando.data.model.Rifa" />
+    </fragment>
+
+</navigation>

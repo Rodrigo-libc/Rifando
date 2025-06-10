@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Rifando" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Cor padrão da ActionBar/Toolbar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Variação para a Toolbar e StatusBar -->
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+
+        <item name="android:textColorPrimary">#000000</item>
+        <!-- Cor da status bar no Android 5.0+ -->
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+
+
+    </style>
+
+    <style name="Theme.Rifando" parent="Base.Theme.Rifando" />
+</resources>

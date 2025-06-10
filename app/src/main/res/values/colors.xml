@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C62828</color>  <!-- vermelho mais claro (ActionBar) -->
+    <color name="colorPrimaryVariant">#B71C1C</color>   <!-- vermelho mais escuro (Toolbar) -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <color name="status_livre">#DDDDDD</color> <!--Cinza -->
+    <color name="status_pago">#4CAF50</color> <!-- Verde -->
+    <color name="status_pendente">#FF9800</color> <!-- Laranja -->
+    <color name="status_selecionado">#47A0F6</color>
+
+</resources>
